@@ -10,7 +10,7 @@ npm i && npm start
 
 -   Installs npm dependencies
 -   Builds the project in production mode
--   Starts the server at `http://localhost:8080`
+-   Starts the server at `http://localhost:3000`
 
 ## Tests
 

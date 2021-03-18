@@ -20,20 +20,20 @@ const spacerProps = {
 type Option = keyof typeof theme["spacing"];
 
 type ISpacerOptions = {
-    [key in keyof typeof spacerProps]?: Option;  
-}
+    [key in keyof typeof spacerProps]?: Option;
+};
 
 export const Spacer = styled.div<ISpacerOptions>`
     ${(props) => {
         const matched = Object.keys(props)
-            .filter((prop) => spacerProps[prop] != null)
-            .map((prop) => [spacerProps[prop], props[prop]]) as [string | string[], string][];
+            .filter((prop) => (spacerProps as any)[prop] != null)
+            .map((prop) => [(spacerProps as any)[prop], (props as any)[prop]]) as [string | string[], string][];
 
         return matched.map(([css, value]) => {
             if (Array.isArray(css)) {
                 return css.map((cssKey) => `${cssKey}: ${theme.spacing[value]};`).join("");
             }
             return `${css}: ${theme.spacing[value]};`;
-        })
+        });
     }}
 `;
