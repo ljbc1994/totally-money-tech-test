@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "jsx": "react",
+        "paths": {
+            "*": ["node_modules/*"]
+        }
+    },
+    "include": ["./**/*", "../shared/constants/card.ts"]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-title" content="Totally Money">
+        <meta name="application-name" content="Totally Money">
+        <meta name="msapplication-TileColor" content="#005f93">
+        <meta name="theme-color" content="#005f93">
+        <meta name="HandheldFriendly" content="true" />
+        
+        <title>Totally Money</title>
+
+        <style id="ssr-styles"></style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <% for (const js of htmlWebpackPlugin.files.js) { %>
+            <script src="<%= js %>"></script>
+        <% } %>
+    </body>
+</html>
