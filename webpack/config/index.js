@@ -21,11 +21,6 @@ module.exports = {
     app: path.join(srcPath, "index.tsx"),
 
     /**
-     * The third-party scripts required.
-     */
-    appVendor: ["react", "react-dom", "react-router-dom"],
-
-    /**
      * The server
      */
     server: path.join(srcServerPath, "index.tsx"),

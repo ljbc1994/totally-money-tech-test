@@ -21,7 +21,9 @@
   "author": "ljbc1994",
   "license": "mit",
   "dependencies": {
+    "@types/compression": "^1.7.0",
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
     "date-fns": "^2.19.0",
     "express": "^4.17.1",
     "flat": "^5.0.2",
@@ -60,6 +62,7 @@
     "typescript": "^4.2.3",
     "typescript-plugin-styled-components": "^1.4.4",
     "webpack": "^5.26.1",
+    "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   },

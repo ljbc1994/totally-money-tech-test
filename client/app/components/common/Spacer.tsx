@@ -27,7 +27,7 @@ export const Spacer = styled.div<ISpacerOptions>`
     ${(props) => {
         const matched = Object.keys(props)
             .filter((prop) => (spacerProps as any)[prop] != null)
-            .map((prop) => [(spacerProps as any)[prop], (props as any)[prop]]) as [string | string[], string][];
+            .map((prop) => [(spacerProps as any)[prop], (props as any)[prop]]) as [string | string[], Option][];
 
         return matched.map(([css, value]) => {
             if (Array.isArray(css)) {

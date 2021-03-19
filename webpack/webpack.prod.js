@@ -48,7 +48,7 @@ module.exports = ({ NODE_SSR_ENABLED }) => {
             new CleanWebpackPlugin({
                 cleanOnceBeforeBuildPatterns: config.cleanOptions,
                 verbose: true,
-            }),
+            })
         ],
     };
 };

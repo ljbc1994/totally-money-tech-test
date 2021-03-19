@@ -6,11 +6,13 @@ import { ServerStyleSheet } from "styled-components";
 import { StaticRouter } from "react-router-dom";
 import { withApi } from "./api";
 import { getAppShell } from "./utilities/app-shell";
+import compression from "compression";
 import App from "../client/app";
 
 const app = express();
 const port = 3000;
 
+app.use(compression());
 app.use(jsonParser());
 app.use(express.static("./dist/assets"));
 

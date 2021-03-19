@@ -14,7 +14,6 @@ module.exports = ({ NODE_DEV_SERVER }) => {
         mode: "development",
 
         entry: {
-            appVendor: config.appVendor,
             app: config.app,
         },
 

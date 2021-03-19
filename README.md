@@ -27,6 +27,8 @@ npm test
 npm run test:all
 ```
 
+- Performance tests (DevTools - Lighthouse)
+
 ## Requirements
 
 ### Ability to add new cards
